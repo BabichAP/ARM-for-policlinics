@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" >
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".presentation.fragments.RegistrationFragment">
+
+    <View
+        android:id="@+id/bg_main"
+        android:layout_width="360dp"
+        android:layout_height="400dp"
+        android:background="@drawable/start_bg"
+        app:layout_constraintBottom_toTopOf="@id/recyclerview"
+        android:layout_marginBottom="180dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/full_name_label" />
+
+    <TextView
+        android:id="@+id/full_name_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter"
+        android:textStyle="bold"
+        android:textColor="#5a5a5a"
+        android:textSize="30sp"
+        android:text="123456789456"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/bg_main"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/snils_text"
+        android:text="123456789456"
+        android:layout_width="300dp"
+        android:textSize="25sp"
+        android:layout_height="30dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:fontFamily="@font/inter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/bg_main"
+        app:layout_constraintBottom_toTopOf="@+id/policy_text"
+        />
+    <TextView
+        android:id="@+id/policy_text"
+        android:text="123456789456"
+        android:layout_width="400dp"
+        android:textSize="25sp"
+        android:layout_height="30dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:fontFamily="@font/inter"
+
+        app:layout_constraintStart_toStartOf="@id/snils_text"
+        app:layout_constraintTop_toBottomOf="@+id/snils_text"/>
+    <TextView
+        android:id="@+id/phone_text"
+        android:text="123456789456"
+        android:layout_width="300dp"
+        android:textSize="25sp"
+        android:layout_height="30dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:fontFamily="@font/inter"
+        app:layout_constraintStart_toStartOf="@id/policy_text"
+        app:layout_constraintTop_toBottomOf="@+id/policy_text"/>
+
+
+    <TextView
+        android:id="@+id/gender_text"
+        android:text="123456789456"
+        android:layout_width="300dp"
+        android:textSize="25sp"
+        android:layout_height="30dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:fontFamily="@font/inter"
+        app:layout_constraintStart_toStartOf="@id/phone_text"
+        app:layout_constraintTop_toBottomOf="@+id/phone_text"/>
+
+    <TextView
+        android:id="@+id/age_text"
+        android:text="123456789456"
+        android:layout_width="300dp"
+        android:textSize="25sp"
+        android:layout_height="30dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:fontFamily="@font/inter"
+        app:layout_constraintStart_toStartOf="@id/gender_text"
+        app:layout_constraintTop_toBottomOf="@+id/gender_text"/>
+    <TextView
+        android:id="@+id/address_text"
+        android:text="123456789456"
+        android:layout_width="300dp"
+        android:textSize="25sp"
+        android:layout_height="30dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:fontFamily="@font/inter"
+        app:layout_constraintStart_toStartOf="@id/age_text"
+        app:layout_constraintTop_toBottomOf="@+id/age_text"/>
+    <TextView
+        android:id="@+id/blood_text"
+        android:text="123456789456"
+        android:layout_width="300dp"
+        android:textSize="25sp"
+        android:layout_height="30dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:fontFamily="@font/inter"
+        app:layout_constraintStart_toStartOf="@id/address_text"
+        app:layout_constraintTop_toBottomOf="@+id/address_text"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/appointment_item"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/bg_main"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_appointment_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:backgroundTint="@color/purple_500"
+        app:srcCompat= "@drawable/add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:contentDescription="@string/add_appointment_description" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

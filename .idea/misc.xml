@@ -3,6 +3,27 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/ARM-for-policlinics/app/src/main/res/drawable/button_bg.xml" value="0.2425" />
+        <entry key="..\:/ARM-for-policlinics/app/src/main/res/drawable/input_background.xml" value="0.2425" />
+        <entry key="..\:/ARM-for-policlinics/app/src/main/res/drawable/input_text.xml" value="0.2425" />
+        <entry key="..\:/ARM-for-policlinics/app/src/main/res/drawable/input_text_bg.xml" value="0.127" />
+        <entry key="..\:/ARM-for-policlinics/app/src/main/res/layout/activity_login.xml" value="0.11614583333333334" />
+        <entry key="..\:/ARM-for-policlinics/app/src/main/res/layout/activity_main.xml" value="0.1171875" />
+        <entry key="..\:/ARM-for-policlinics/app/src/main/res/layout/appointment_item.xml" value="0.4" />
+        <entry key="..\:/ARM-for-policlinics/app/src/main/res/layout/doctor_item.xml" value="0.39206349206349206" />
+        <entry key="..\:/ARM-for-policlinics/app/src/main/res/layout/fragment_add_appointment.xml" value="0.264" />
+        <entry key="..\:/ARM-for-policlinics/app/src/main/res/layout/fragment_add_patient.xml" value="0.2" />
+        <entry key="..\:/ARM-for-policlinics/app/src/main/res/layout/fragment_doctor_list.xml" value="0.259375" />
+        <entry key="..\:/ARM-for-policlinics/app/src/main/res/layout/fragment_login.xml" value="0.2" />
+        <entry key="..\:/ARM-for-policlinics/app/src/main/res/layout/fragment_patient_info.xml" value="0.176" />
+        <entry key="..\:/ARM-for-policlinics/app/src/main/res/layout/fragment_patient_list.xml" value="0.264" />
+        <entry key="..\:/ARM-for-policlinics/app/src/main/res/layout/fragment_registration.xml" value="0.264" />
+        <entry key="..\:/ARM-for-policlinics/app/src/main/res/layout/item.xml" value="0.1171875" />
+        <entry key="..\:/ARM-for-policlinics/app/src/main/res/layout/list_flights_fragment.xml" value="0.1" />
+        <entry key="..\:/ARM-for-policlinics/app/src/main/res/layout/patient_item.xml" value="0.4" />
+        <entry key="..\:/ARM-for-policlinics/app/src/main/res/layout/simple_spinner_item.xml" value="0.2" />
+        <entry key="..\:/ARM-for-policlinics/app/src/main/res/menu/appointment_menu.xml" value="0.1" />
+        <entry key="..\:/ARM-for-policlinics/app/src/main/res/menu/card_menu.xml" value="0.18958333333333333" />
         <entry key="..\:/ARMforpolyclinics/app/src/main/res/layout/activity_main.xml" value="0.24818840579710144" />
       </map>
     </option>
@@ -12,5 +33,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.264" />
+      </ProjectState>
+    </option>
   </component>
 </project>

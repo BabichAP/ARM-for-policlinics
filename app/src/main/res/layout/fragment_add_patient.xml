@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/main_bg_color"
+
+    tools:context=".presentation.fragments.RegistrationFragment">
+
+    <View
+        android:id="@+id/bg_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/start_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ll_name_edittext_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintBottom_toTopOf="@+id/ll_surname_edittext_register"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/name_edittext_add"
+            android:layout_width="300dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="10dp"
+            android:autofillHints="name"
+            android:background="@drawable/input_text_bg"
+            android:ems="10"
+            android:fontFamily="@font/inter"
+            android:hint="@string/input_name_hint"
+            android:inputType="textPersonName"
+            tools:ignore="LabelFor" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ll_surname_edittext_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_name_edittext_register"
+        app:layout_constraintBottom_toTopOf="@id/ll_patronymic_edittext_register"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/surname_edittext_add"
+            android:layout_width="300dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="10dp"
+            android:autofillHints="name"
+            android:background="@drawable/input_text_bg"
+            android:ems="10"
+            android:fontFamily="@font/inter"
+            android:hint="@string/input_surname_hint"
+            android:inputType="textPersonName"
+            tools:ignore="LabelFor" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ll_patronymic_edittext_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_surname_edittext_register"
+        app:layout_constraintBottom_toTopOf="@id/ll_phone_edittext_register"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/patronymic_edittext_add"
+            android:layout_width="300dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="10dp"
+            android:autofillHints="name"
+            android:background="@drawable/input_text_bg"
+            android:ems="10"
+            android:fontFamily="@font/inter"
+            android:hint="@string/input_patronymic_hint"
+            android:inputType="textPersonName"
+            tools:ignore="LabelFor" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ll_phone_edittext_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_patronymic_edittext_register"
+        app:layout_constraintBottom_toTopOf="@id/ll_email_edittext_register"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/phone_edittext_add"
+            android:layout_width="300dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="10dp"
+            android:autofillHints="name"
+            android:background="@drawable/input_text_bg"
+            android:ems="10"
+            android:fontFamily="@font/inter"
+            android:hint="@string/input_phone_hint"
+            android:inputType="phone"
+            tools:ignore="LabelFor" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ll_email_edittext_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_phone_edittext_register"
+        app:layout_constraintBottom_toTopOf="@id/ll_password_edittext_register"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/address_edittext_add"
+            android:layout_width="300dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="10dp"
+            android:autofillHints="name"
+            android:background="@drawable/input_text_bg"
+            android:ems="10"
+            android:fontFamily="@font/inter"
+            android:hint="@string/enter_address"
+            tools:ignore="LabelFor" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ll_password_edittext_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_email_edittext_register"
+        app:layout_constraintBottom_toTopOf="@id/ll_policy_edittext_register"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/snils_edittext_register"
+            android:layout_width="300dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="10dp"
+            android:autofillHints="name"
+            android:background="@drawable/input_text_bg"
+            android:ems="10"
+            android:fontFamily="@font/inter"
+            android:hint="@string/enter_snils"
+            android:inputType="number"
+            tools:ignore="LabelFor" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ll_policy_edittext_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_password_edittext_register"
+        app:layout_constraintBottom_toTopOf="@id/ll_age_edittext_register"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/policy_edittext_register"
+            android:layout_width="300dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="10dp"
+            android:autofillHints="name"
+            android:background="@drawable/input_text_bg"
+            android:ems="10"
+            android:fontFamily="@font/inter"
+            android:hint="@string/enter_policy"
+            android:inputType="number"
+            tools:ignore="LabelFor" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ll_age_edittext_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_policy_edittext_register"
+        app:layout_constraintBottom_toTopOf="@id/spiners"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/age_edittext_register"
+            android:layout_width="300dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="10dp"
+            android:autofillHints="name"
+            android:background="@drawable/input_text_bg"
+            android:ems="10"
+            android:fontFamily="@font/inter"
+            android:hint="@string/enter_age"
+            android:inputType="number"
+            tools:ignore="LabelFor" />
+    </com.google.android.material.textfield.TextInputLayout>
+<LinearLayout
+    android:id="@+id/spiners"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintBottom_toTopOf="@+id/sign_up_button"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="@string/choose_gender"/>
+    <Spinner
+        android:id="@+id/gender_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="@string/choose_blood"/>
+
+    <Spinner
+        android:id="@+id/blood_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+ />
+</LinearLayout>
+    <Button
+        android:id="@+id/sign_up_button"
+        android:layout_width="280dp"
+        android:layout_height="45dp"
+
+        android:background="@drawable/button_bg"
+        android:fontFamily="@font/inter"
+        android:text="добавить пациента"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_password_edittext_register"
+         />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

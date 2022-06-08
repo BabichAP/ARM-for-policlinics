@@ -1,3 +1,56 @@
 <resources>
     <string name="app_name">ARM for polyclinics</string>
+    <string name="authorization_textview">Авторизация</string>
+    <string name="registration_textview">Регистрация</string>
+    <string name="sign_in_button">Войти</string>
+    <string name="sign_up_button">Зарегистрироваться</string>
+    <string name="input_password_hint">введите пароль:</string>
+    <string name="input_name_hint">введите имя:</string>
+    <string name="input_surname_hint">введите фамилию:</string>
+    <string name="input_patronymic_hint">введите отчество:</string>
+    <string name="input_phone_hint">введите номер телефона:</string>
+    <string name="llerror_password_hint">неверно введён пароль</string>
+    <string name="error_password_hint">Пароль должен:\nбыть не пустым;\nдолжен быть длинее 8 символов;\nсодержать буквы в верхнем и нижнем регистре;\nсодержать хотя бы одну цифру.</string>
+    <string name="llerror_email_hint">неверно введена почта</string>
+    <string name="error_email_hint">Пример корректной почты:\nexample@example.ru</string>
+    <string name="llerror_name_hint">неверно введено имя</string>
+    <string name="error_name_hint">Имя не может быть пустым</string>
+    <string name="llerror_surname_hint">неверно введена фамилия</string>
+    <string name="error_surname_hint">Фамилия не может быть пустой</string>
+    <string name="llerror_patronymic_hint">неверно введено отчество</string>
+    <string name="error_patronymic_hint">Отчество не может быть пустым</string>
+    <string name="llerror_phone_hint">неверно введен номер телефона</string>
+    <string name="error_phone_hint">Номер должен состоять из 10 подряд идущих цифр без 8 или +7</string>
+
+    <string name="have_no_account">Ещё нет аккаунта?\n<a href="">Зарегистрируйся</a></string>
+    <string name="have_account">Уже есть аккаунт?\n<a href="">Авторизируйся</a></string>
+    <string name="enter_email">введите email:</string>
+    <string name="age_label">Возраст:</string>
+    <string name="gender_label">Пол:</string>
+    <string name="add_patient_description">Добавить пациента</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="detail_patient">Подробно</string>
+    <string name="modify_patient">Изментить</string>
+    <string name="delete_patient">Удалить</string>
+    <string name="snils_label">Снилс:</string>
+    <string name="policy_label">Полис:</string>
+    <string name="phone_label">Телефон:</string>
+    <string name="appointment_label">Запись на прием</string>
+    <string name="date_of_appointment_label">Дата и время записи:</string>
+    <string name="profession_label">Профессия доктора:</string>
+    <string name="cabinet_label">Кабинет:</string>
+    <string name="add_appointment_description">Добавить запись</string>
+    <string name="appointment_label_add">Запись к врачу</string>
+    <string name="choose_doctor">Выберите доктора:</string>
+    <string name="choose_date">Выберите дату:</string>
+    <string name="add_appointment">Записаться</string>
+    <string name="doctor_profession">Профессия:</string>
+    <string name="enter_address">введите адрес:</string>
+    <string name="enter_snils">введите снилс:</string>
+    <string name="enter_policy">введите полис:</string>
+    <string name="enter_age">введите возраст:</string>
+    <string name="choose_gender">Выберите пол:</string>
+    <string name="choose_blood">Выберите группу крови:</string>
+
 </resources>
